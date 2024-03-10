@@ -64,3 +64,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## boiler plate laravel 10
+1. created project
+2. import stelsta template
+3. migration
+   - factory untuk membuat fake data 
+   'php artisan migrate:fresh --seed for create tb on real dbms'
+4. fortify
+   https://laravel.com/docs/10.x/fortify#what-is-fortify
+   add page route on (app/Providers/FortifyServiceProvider.php) in fuction boot()
+   
+       Fortify::loginView(function(){
+        return view('pages.auth.login');
+       });
+
+ 
+
+5. crud users
+ -- config pagination
+ 'app\Providers\AppServiceProvider.php'
+  add  the code  Paginator::useBootstrapFour(); on function boot()
