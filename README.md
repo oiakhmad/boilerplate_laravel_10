@@ -1,10 +1,11 @@
 
 ## boiler plate laravel 10
 1. clone the project when use https can use this url https://github.com/oiakhmad/boilerplate_laravel_10.git
-2. run the code 'composer install' for donwload all package in use on this project
+2. run the code 'composer  install' for donwload all package in use on this project
 3. set up configuration 
-   * create local db
-   * adjust config on project laravel as 
+   * create local database use phpmyadmin,laragon(heidesQL) ect
+   * adjust config on .env as 
+
    DB_CONNECTION=your_connection example (mysql)
    DB_HOST=your_host example (127.0.0.1)
    DB_PORT=your_port example (3306)
@@ -15,6 +16,7 @@
 3. migration
    - run the code 'php artisan migrate:fresh --seed for create all table on your database local'
    - factory in use for create fake data
+
 5. for run servie can use 'php artisan serve'
 
 
@@ -36,3 +38,5 @@
  -- config pagination
  'app\Providers\AppServiceProvider.php'
   add  the code  Paginator::useBootstrapFour(); on function boot()
+
+- if what is your changes not uptodate when service is running please try run this code 'php artisan optimize:clear' for clear all chace. 
