@@ -27,7 +27,7 @@
             </li> --}}
             <li class="menu-header">Master Data</li>
             <li class="{{ Request::is('users') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('users ') }}"><i class="fas fas fa-fire">
+                <a class="nav-link" href="{{ url('users ') }}"><i class="rounded-circle mr-1">
                     </i> <span>Users</span>
                 </a>
             </li>
